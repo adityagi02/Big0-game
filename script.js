@@ -1,5 +1,6 @@
 
 // Variable to store the list of guesses 
+let guesses = [];
 
 // Variable for store the correct random number 
 let correctNumber = getRandomNumber();
@@ -20,6 +21,8 @@ function playGame(){
   // *CODE GOES BELOW HERE *
 let numberGuess = document.getElementById("number-guess").value;
 displayResult(numberGuess);
+saveGuessHistory(numberGuess);
+    displayHistory();
 }
 /**
  * Show the result for if the guess it too high, too low, or correct
@@ -44,6 +47,11 @@ else {
  */
 function initGame(){
   // *CODE GOES BELOW HERE *
+  // Reset the Correct number
+  // Reset the result display
+  // Reset the guess history display
+  // Reset the Guesses Array
+  correctnumber = getRandomNumber();
 }
 
 /**
@@ -72,6 +80,7 @@ function getRandomNumber(){
  */
 function saveGuessHistory(guess) {
   // *CODE GOES BELOW HERE *
+    guesses.push(guess);
 }
 
 /**
