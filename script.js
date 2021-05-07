@@ -105,16 +105,11 @@ function getDialog(dialogType, text){
 
 function showYouWon(){
   const text = "Awesome job, you got it!"
-  /**
-   * Retrieve the dialog using the getDialog() function
-   * and save it to variable called dialog
-   * HINT: Use the 'won' and text parameters 
-   */
-  // *CODE GOES BELOW HERE *
+  
+  //  Retrieve the dialog using the getDialog() function
   let dialog = getDialog('won', text);
   document.getElementById("result").innerHTML = dialog;
 }
-
 function showNumberAbove(){
   const text = "Your guess is too high!"
   
@@ -126,12 +121,8 @@ function showNumberAbove(){
 
 function showNumberBelow(){
   const text = "Your guess is too low!"
-  /**
-   * Retrieve the dialog using the getDialog() function
-   * and save it to variable called dialog
-   * HINT: Use the 'warning' and text parameters 
-   */
-  // *CODE GOES BELOW HERE *
+  
+  //Retrieve the dialog using the getDialog() function 
   let dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
