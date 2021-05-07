@@ -117,12 +117,9 @@ function showYouWon(){
 
 function showNumberAbove(){
   const text = "Your guess is too high!"
-  /**
-   * Retrieve the dialog using the getDialog() function
-   * and save it to variable called dialog
-   * HINT: Use the 'warning' and text parameters 
-   */
-  // *CODE GOES BELOW HERE *
+  
+  // Retrieve the dialog using the getDialog() function
+ 
   let dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
