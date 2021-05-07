@@ -81,6 +81,7 @@ function getRandomNumber(){
 function saveGuessHistory(guess) {
   // *CODE GOES BELOW HERE *
     guesses.push(guess);
+    
 }
 
 /**
@@ -95,7 +96,13 @@ function displayHistory() {
   let index; // TODO
   let list = "<ul class='list-group'>";
   // *CODE GOES BELOW HERE *
-  list += '</ul>'
+    while (index < guesses.length){
+        list += "li class='list-group-item'>" + "You Guessed  " +
+            guesses[index] + "</li>";
+        index++
+    }
+             
+     list += '</ul>'
   document.getElementById("history").innerHTML = list;
 }
 
