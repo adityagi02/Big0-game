@@ -52,6 +52,9 @@ function initGame(){
   // Reset the guess history display
   // Reset the Guesses Array
   correctnumber = getRandomNumber();
+  document.getElementById("history").innerHTML = "";
+  guesses = [];
+  displayHistory();  
 }
 
 /**
