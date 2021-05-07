@@ -14,21 +14,16 @@ window.onload = function() {
    
   }
 
-/*
- * Functionality for playing the whole game
- */
+// Functionality for playing the whole game
+ 
 function playGame(){
-  // *CODE GOES BELOW HERE *
+
 let numberGuess = document.getElementById("number-guess").value;
 displayResult(numberGuess);
 saveGuessHistory(numberGuess);
     displayHistory();
 }
-/**
- * Show the result for if the guess it too high, too low, or correct
- * HINT: Use if, else if, else statement 
- */
-// *CODE GOES BELOW HERE *
+// Show the result for if the guess it too high, too low, or correct
 
 function displayResult(numberGuess){
 if (correctNumber > numberGuess){
@@ -41,64 +36,43 @@ else {
    showYouWon();
   } 
 }
-/**
- * Initialize a new game by resetting all values and content on the page
- * HINT: reset the correctNumber, guesses, and HTML content
- */
+// Initializing a new game by resetting all values and content on the page
+
 function initGame(){
-  // *CODE GOES BELOW HERE *
-  // Reset the Correct number
-  // Reset the result display
-  // Reset the guess history display
-  // Reset the Guesses Array
   correctnumber = getRandomNumber();
   document.getElementById("history").innerHTML = "";
   guesses = [];
   displayHistory();  
 }
 
-/**
- * Reset the HTML content for guess history
- */
+// Reset the HTML content for guess history
+
 function resetResultContent(){
   document.getElementById("result").innerHTML = "";
 }
 
-/**
- * Return a random number between 1 and 100
- * HINT: Use Math.random 
- */
+// Return a random number between 1 and 100;
+
 function getRandomNumber(){
-  // *CODE GOES BELOW HERE *
-  
   let randomNumber = Math.random();
   let wholeNumber = Math.floor(randomNumber*100)+1;
   return wholeNumber;
 }
 
-/**
- * Save guess history 
- * HINT: Search Google "append to array in javascript"
- * HINT: Use the guesses variable
- */
+
+ // Save guess history 
+ 
 function saveGuessHistory(guess) {
-  // *CODE GOES BELOW HERE *
     guesses.push(guess);
     
 }
 
-/**
- * Display guess history to user
- * HTML TO USE:
- * <ul class='list-group'>
- *  <li class='list-group-item'>You guessed {number}</li
- * </ul>
- * HINT: use while loop and string concatentation to create a list of guesses
- */
+//  Display guess history to use 
+
 function displayHistory() {
-  let index; // TODO
+  let index; 
   let list = "<ul class='list-group'>";
-  // *CODE GOES BELOW HERE *
+ 
     while (index < guesses.length){
         list += "li class='list-group-item'>" + "You Guessed  " +
             guesses[index] + "</li>";
