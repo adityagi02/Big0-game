@@ -6,8 +6,6 @@ let guesses = [];
 let correctNumber = getRandomNumber();
 console.log(correctNumber);
 
-
-
 window.onload = function() {
     document.getElementById("number-submit").addEventListener("click", playGame);
     document.getElementById("restart-game").addEventListener("click", initGame)
@@ -83,11 +81,8 @@ function displayHistory() {
   document.getElementById("history").innerHTML = list;
 }
 
+// Retrieve the dialog based on if the guess is wrong or correct 
 
-
-/**
- * Retrieve the dialog based on if the guess is wrong or correct 
- */
 function getDialog(dialogType, text){
   let dialog;
   switch(dialogType){
@@ -114,7 +109,6 @@ function showNumberAbove(){
   const text = "Your guess is too high!"
   
   // Retrieve the dialog using the getDialog() function
- 
   let dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
