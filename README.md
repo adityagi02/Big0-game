@@ -11,5 +11,5 @@
  *  Use the showYouWon... functions within displayResult to display the correct dialog
  *  Save the guess history in a variable called guess
  *  Display the guess history using displayHistory() function
- * TODO✅: Use the initGame() function to restart the game
+ *  Use the initGame() function to restart the game
  */
