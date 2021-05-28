@@ -10,6 +10,6 @@
  *  Complete the showYouWon, showNumberAbove, showNumberBelow
  *  Use the showYouWon... functions within displayResult to display the correct dialog
  *  Save the guess history in a variable called guess
- * TODO✅: Display the guess history using displayHistory() function
+ *  Display the guess history using displayHistory() function
  * TODO✅: Use the initGame() function to restart the game
  */
